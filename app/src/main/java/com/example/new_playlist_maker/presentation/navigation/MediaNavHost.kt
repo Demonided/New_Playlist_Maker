@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.new_playlist_maker.presentation.ui.screen.HomeScreen
+import com.example.new_playlist_maker.presentation.ui.screen.MediaScreen
 import com.example.new_playlist_maker.presentation.ui.screen.SettingScreen
 
 @Composable
@@ -35,7 +36,7 @@ fun MediaNavHost(
         }
 
         composable(route = MediaDestination.route) {
-
+            MediaScreen()
         }
 
         composable(route = SettingsDestination.route) {
